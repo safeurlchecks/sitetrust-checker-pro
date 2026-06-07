@@ -17,7 +17,7 @@ export default {
         return json({
           ok: true,
           service: 'SiteTrust Checker Pro',
-          version: '4.0-worker-static-assets',
+          version: '5.0-worker-static-assets-fixed',
           message: 'Backend API is connected. Website analysis can run.',
           time: new Date().toISOString()
         });
@@ -800,7 +800,7 @@ function unique(arr) { return [...new Set((arr || []).map(x => safeText(x)).filt
 function addIf(arr, condition, value) { if (condition) arr.push(value); }
 
 function getAttr(attrs, name) {
-  const re = new RegExp('\\b' + name + '\\s*=\\s*(["\\'])(.*?)\\1', 'i');
+  const re = new RegExp("\\b" + name + "\\s*=\\s*([\"'])(.*?)\\1", "i");
   const m = re.exec(attrs || '');
   if (m) return decodeHtml(m[2]);
   const re2 = new RegExp('\\b' + name + '\\s*=\\s*([^\\s>]+)', 'i');
@@ -814,7 +814,7 @@ function attrFromTag(html, tagRe, attr) {
 }
 
 function metaContent(html, name) {
-  const re = new RegExp('<meta\\b[^>]*(?:name|property)=["\\']' + escapeRegExp(name) + '["\\'][^>]*>', 'i');
+  const re = new RegExp("<meta\\b[^>]*(?:name|property)=[\"']" + escapeRegExp(name) + "[\"'][^>]*>", "i");
   return attrFromTag(html, re, 'content');
 }
 function metaProperty(html, prop) { return metaContent(html, prop); }
