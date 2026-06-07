@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SiteTrust Checker Pro | Website Intelligence Report</title>
+  <meta name="description" content="Analyze public websites for links, SEO, security headers, contact signals, technology hints, privacy signals and risk level." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <style>
+    :root{--bg:#08111f;--panel:#111d31;--panel2:#17243a;--text:#f7fbff;--muted:#9fb5d4;--line:#2a3b55;--accent:#66ead4;--accent2:#67b7ff;--warn:#ffd36d;--danger:#ff7b8c;--ok:#72f2a7;--shadow:0 22px 70px rgba(0,0,0,.34);--radius:24px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top left,rgba(102,234,212,.16),transparent 32%),linear-gradient(180deg,#08111f,#0b1321 52%,#070d17);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}.topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px clamp(16px,4vw,42px);backdrop-filter:blur(14px);background:rgba(8,17,31,.88);border-bottom:1px solid rgba(255,255,255,.08)}.brand{display:flex;align-items:center;gap:12px}.brand-mark{display:grid;place-items:center;width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#03101e;font-weight:950;box-shadow:0 14px 30px rgba(102,234,212,.18)}.brand strong{display:block;font-size:17px;letter-spacing:.2px}.brand small{display:block;color:var(--muted);font-size:12px;margin-top:2px}.topbar nav{display:flex;gap:16px;align-items:center}.topbar nav a{color:#dce9ff;font-weight:800;font-size:14px}.menu-btn{display:none;background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:13px;padding:10px 13px;font-size:20px}.shell{width:min(1200px,calc(100% - 28px));margin:28px auto 50px}.card,.loading,.notice,.error,.translator,.report-card,.score-card,.summary-card{border:1px solid rgba(255,255,255,.10);background:linear-gradient(180deg,rgba(20,34,55,.96),rgba(12,22,37,.96));border-radius:var(--radius);box-shadow:var(--shadow)}.hero{padding:clamp(22px,4vw,42px);position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:-42% -20% auto auto;width:520px;height:520px;background:radial-gradient(circle,rgba(102,234,212,.16),transparent 66%);pointer-events:none}.hero-top{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;position:relative}.eyebrow{margin:0 0 12px;color:var(--accent);font-weight:950;letter-spacing:.22em;text-transform:uppercase;font-size:12px}.hero h1,.simple-page h1{font-size:clamp(38px,6vw,68px);line-height:.94;margin:0 0 16px;letter-spacing:-.055em}.lead{font-size:18px;line-height:1.75;color:#c6d8f2;max-width:890px;margin:0}.url-form{margin-top:30px;position:relative}.url-form label{display:block;font-weight:950;margin:0 0 12px;font-size:18px}.input-row{display:grid;grid-template-columns:1fr 170px;gap:14px}.input-row input{width:100%;border:1px solid #1c2b42;background:#050b14;color:var(--text);border-radius:18px;padding:20px 22px;font-size:18px;outline:none}.input-row input:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(102,234,212,.12)}button{font-family:inherit}.primary-btn,.accent-btn,.ghost-btn,.quick-actions button,.report-actions button,.translate-controls button,.tab-btn{border:0;border-radius:18px;font-weight:950;cursor:pointer;transition:.16s ease;min-height:52px}.primary-btn{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#04101e;padding:0 24px;font-size:16px}.primary-btn:hover,.accent-btn:hover{transform:translateY(-1px);filter:brightness(1.08)}.primary-btn:disabled{opacity:.55;cursor:not-allowed;transform:none}.ghost-btn,.quick-actions button,.report-actions button,.translate-controls button{background:#202c3e;border:1px solid #34445d;color:#f7fbff;padding:13px 18px}.ghost-btn:hover,.quick-actions button:hover,.report-actions button:hover,.translate-controls button:hover{background:#2b3a51}.ghost-btn.small{min-height:42px;border-radius:14px}.hint{margin:12px 0 0;color:#9fc1f7;font-size:14px;line-height:1.65}.quick-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.loading{display:flex;gap:16px;align-items:center;padding:22px;margin-top:22px}.loading p{margin:4px 0 0;color:var(--muted)}.spinner{width:34px;height:34px;border-radius:50%;border:4px solid rgba(255,255,255,.15);border-top-color:var(--accent);animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.hidden{display:none!important}.notice,.error{padding:18px 20px;margin-top:22px}.notice{border-color:rgba(255,207,102,.45);background:rgba(255,207,102,.1);color:#ffe8aa}.error{border-color:rgba(255,123,140,.45);background:rgba(255,123,140,.12);color:#ffd9dd}.report-actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.accent-btn{background:linear-gradient(135deg,#ffd36d,#ff9d66);color:#111827;padding:0 20px}.translator{padding:22px;margin:22px 0}.translator-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}.translator h2{margin:0 0 8px;font-size:28px}.translate-controls{display:grid;grid-template-columns:1.2fr .9fr auto auto auto;gap:12px;margin-top:18px}.translate-controls select,.translate-controls input{background:#050b14;color:var(--text);border:1px solid #293b55;border-radius:14px;padding:14px;font-size:15px}.translated-output,.raw-json{white-space:pre-wrap;word-break:break-word;background:#050b14;border:1px solid #26374f;border-radius:16px;padding:18px;color:#e9f4ff;max-height:520px;overflow:auto}.translated-output{min-height:120px;margin:16px 0 0}.score-board{display:grid;grid-template-columns:300px 1fr;gap:18px;margin:24px 0}.score-card,.summary-card{padding:24px}.score-card{text-align:center}.score-ring{--score:0;position:relative;width:142px;height:142px;margin:0 auto 16px;border-radius:50%;background:conic-gradient(var(--accent) calc(var(--score)*1%),rgba(255,255,255,.1) 0);display:grid;place-items:center}.score-ring:after{content:"";position:absolute;inset:13px;border-radius:50%;background:#101b2b}.score-ring strong{position:relative;z-index:1;font-size:42px}.score-card h3,.summary-card h3,.report-card h3{margin:0 0 12px;font-size:22px}.score-card p,.summary-card p{color:var(--muted);line-height:1.6}.decision{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:8px 12px;font-weight:950;margin-top:8px}.decision.yes{color:#05170d;background:var(--ok)}.decision.caution{color:#241400;background:var(--warn)}.decision.no{color:#2c050b;background:var(--danger)}.partial-badge{display:inline-flex;border:1px solid rgba(255,207,102,.55);background:rgba(255,207,102,.12);color:#ffe8aa;border-radius:999px;padding:7px 11px;font-size:13px;font-weight:900;margin-left:8px}.muted{color:var(--muted)}.summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:16px}.stat{border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);border-radius:16px;padding:14px}.stat b{display:block;font-size:24px;line-height:1.1}.stat span{display:block;color:var(--muted);font-size:12px;margin-top:6px;text-transform:uppercase;letter-spacing:.06em}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 12px}.tab-btn{background:#0d1727;color:#dce9ff;border:1px solid #26374f;border-radius:999px;padding:11px 14px}.tab-btn.active{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#03101e;border-color:transparent}.tab-panel{margin-top:14px}.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.report-card{padding:22px;min-width:0}.report-card p{color:#cfe0fa;line-height:1.7}.list{margin:0;padding:0;list-style:none}.list li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.07);line-height:1.55;color:#dce9ff}.list li:last-child{border-bottom:0}.link-list{display:grid;gap:10px;max-height:430px;overflow:auto;padding-right:4px}.link-item{display:block;background:#07111f;border:1px solid #22334b;border-radius:14px;padding:12px;color:#eaf4ff}.link-item:hover{text-decoration:none;border-color:#3a597e}.link-item small{display:block;color:#9fb5d4;margin-top:4px;overflow:hidden;text-overflow:ellipsis}.keyword-list{display:flex;gap:8px;flex-wrap:wrap}.keyword{padding:8px 11px;border-radius:999px;background:#07111f;border:1px solid #243650;color:#dfeeff}.table-wrap{overflow:auto;border:1px solid #26374f;border-radius:16px}table{width:100%;border-collapse:collapse;min-width:720px}th,td{padding:13px;text-align:left;border-bottom:1px solid rgba(255,255,255,.08);vertical-align:top}th{background:#07111f;color:#cfe0fa;font-size:13px;text-transform:uppercase;letter-spacing:.08em}td{color:#e6f1ff}.badge{display:inline-flex;border-radius:999px;padding:6px 10px;font-weight:950;font-size:12px;text-transform:uppercase}.pass{background:rgba(114,242,167,.16);color:#9ffac5}.fail{background:rgba(255,123,140,.16);color:#ffc3ca}.warn{background:rgba(255,207,102,.16);color:#ffe09a}.info{background:rgba(103,183,255,.16);color:#bae1ff}.footer{padding:28px clamp(16px,4vw,42px);border-top:1px solid rgba(255,255,255,.08);color:var(--muted);text-align:center}.simple-page{max-width:850px}.simple-page p{font-size:18px;color:#c6d8f2;line-height:1.75}@media(max-width:900px){.topbar{align-items:flex-start}.menu-btn{display:block}.topbar nav{display:none;position:absolute;left:14px;right:14px;top:76px;flex-direction:column;align-items:stretch;background:#101b2b;border:1px solid #26374f;border-radius:18px;padding:14px}.topbar nav.open{display:flex}.hero-top,.translator-head{flex-direction:column}.input-row,.score-board,.grid-2,.grid-3,.translate-controls{grid-template-columns:1fr}.summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.input-row button{height:60px}.hero h1{font-size:42px}.brand small{display:none}}@media(max-width:540px){.summary-grid{grid-template-columns:1fr}.report-card,.score-card,.summary-card,.hero{padding:18px}.report-actions button,.quick-actions button{width:100%}.tabs{display:grid;grid-template-columns:1fr 1fr}.tab-btn{border-radius:14px}.score-ring{width:120px;height:120px}.score-ring strong{font-size:34px}}@media print{body{background:white;color:#111}.topbar,.url-form,.quick-actions,.report-actions,.translator,.footer,.notice,.error{display:none!important}.shell{width:100%;margin:0}.card,.report-card,.score-card,.summary-card{box-shadow:none;background:white;color:#111;border:1px solid #ddd}.muted,.list li,.report-card p,.summary-card p{color:#333}.tabs{display:none}.tab-panel{display:block!important}.link-item,.translated-output,.raw-json{background:white;color:#111}.score-ring:after{background:white}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="SiteTrust Checker Pro home">
+      <span class="brand-mark">ST</span>
+      <span><strong>SiteTrust Checker Pro</strong><small>Website intelligence, SEO and security report</small></span>
+    </a>
+    <button class="menu-btn" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="navLinks">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <section class="hero card">
+      <div class="hero-top">
+        <div>
+          <p class="eyebrow">Analyze public websites</p>
+          <h1>Website Intelligence Report</h1>
+          <p class="lead">Paste any public URL and generate a clean English report covering links, SEO, security headers, contact signals, technology hints, privacy signals, content quality, user actions and risk level.</p>
+        </div>
+        <button id="clearBtn" class="ghost-btn" type="button">Clear</button>
+      </div>
+
+      <form id="urlForm" class="url-form">
+        <label for="urlInput">Website URL</label>
+        <div class="input-row">
+          <input id="urlInput" name="url" type="url" inputmode="url" placeholder="https://example.com" autocomplete="url" required />
+          <button type="submit" class="primary-btn">Analyze Now</button>
+        </div>
+        <p class="hint">Only public HTTP/HTTPS websites are supported. Private, local, internal and unusual-port URLs are blocked for safety.</p>
+      </form>
+
+      <div class="quick-actions" aria-label="Sample URLs">
+        <button type="button" data-sample="https://example.com">Safe Sample</button>
+        <button type="button" data-sample="https://www.wikipedia.org">Content Sample</button>
+        <button type="button" data-sample="https://www.cloudflare.com">Tech Sample</button>
+      </div>
+    </section>
+
+    <section id="loading" class="loading hidden" aria-live="polite">
+      <div class="spinner"></div>
+      <div><strong>Analyzing website...</strong><p>Fetching public HTML, headers, visible links and technical signals.</p></div>
+    </section>
+    <section id="noticeBox" class="notice hidden"></section>
+    <section id="errorBox" class="error hidden"></section>
+
+    <section id="reportActions" class="report-actions hidden" aria-label="Report actions">
+      <button id="copySummaryBtn" type="button">Copy Summary</button>
+      <button id="copyJsonBtn" type="button">Copy JSON</button>
+      <button id="downloadJsonBtn" type="button">Download JSON</button>
+      <button id="printReportBtn" type="button">Print / Save PDF</button>
+      <button id="translateToggleBtn" type="button" class="accent-btn">Translate Report</button>
+    </section>
+
+    <section id="translateBox" class="translator hidden">
+      <div class="translator-head">
+        <div><p class="eyebrow">Report translator</p><h2>Translate the English report</h2><p class="hint">Choose a language or type a language code. Example: bn, hi, ar, es, fr, de, zh-CN, ja.</p></div>
+        <button id="closeTranslateBtn" type="button" class="ghost-btn small">Close</button>
+      </div>
+      <div class="translate-controls">
+        <select id="languageSelect" aria-label="Target language">
+          <option value="bn">Bangla</option><option value="hi">Hindi</option><option value="ur">Urdu</option><option value="ar">Arabic</option><option value="en">English</option><option value="es">Spanish</option><option value="fr">French</option><option value="de">German</option><option value="it">Italian</option><option value="pt">Portuguese</option><option value="ru">Russian</option><option value="zh-CN">Chinese Simplified</option><option value="ja">Japanese</option><option value="ko">Korean</option><option value="tr">Turkish</option><option value="id">Indonesian</option><option value="ms">Malay</option><option value="th">Thai</option><option value="vi">Vietnamese</option><option value="ne">Nepali</option><option value="ta">Tamil</option>
+        </select>
+        <input id="customLang" type="text" maxlength="8" placeholder="Custom code" aria-label="Custom language code" />
+        <button id="translateBtn" type="button" class="primary-btn">Translate</button>
+        <button id="googleTranslateBtn" type="button">Open Google Translate</button>
+        <button id="copyTranslatedBtn" type="button">Copy Translation</button>
+      </div>
+      <div id="translationStatus" class="hint"></div>
+      <pre id="translatedOutput" class="translated-output"></pre>
+    </section>
+
+    <section id="report" class="report hidden"></section>
+  </main>
+
+  <footer class="footer"><p>This tool performs a defensive audit from publicly visible page HTML, response headers and common patterns. It is not a guarantee of safety, legality, reputation or completeness.</p></footer>
+
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  let latestReport = null;
+
+  const form = $('urlForm'), input = $('urlInput'), report = $('report'), loading = $('loading'), noticeBox = $('noticeBox'), errorBox = $('errorBox'), actions = $('reportActions'), translateBox = $('translateBox');
+
+  $('menuToggle')?.addEventListener('click', () => $('navLinks')?.classList.toggle('open'));
+  $('clearBtn')?.addEventListener('click', clearReport);
+  $('copySummaryBtn')?.addEventListener('click', () => copyText(buildTextSummary(latestReport)));
+  $('copyJsonBtn')?.addEventListener('click', () => copyText(JSON.stringify(latestReport, null, 2)));
+  $('downloadJsonBtn')?.addEventListener('click', downloadJson);
+  $('printReportBtn')?.addEventListener('click', () => window.print());
+  $('translateToggleBtn')?.addEventListener('click', () => translateBox.classList.toggle('hidden'));
+  $('closeTranslateBtn')?.addEventListener('click', () => translateBox.classList.add('hidden'));
+  $('translateBtn')?.addEventListener('click', translateReport);
+  $('googleTranslateBtn')?.addEventListener('click', openGoogleTranslate);
+  $('copyTranslatedBtn')?.addEventListener('click', () => copyText($('translatedOutput').textContent || ''));
+
+  document.querySelectorAll('[data-sample]').forEach(btn => btn.addEventListener('click', () => { input.value = btn.dataset.sample; input.focus(); }));
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const url = input.value.trim();
+    if (!url) return;
+    setLoading(true); hideError(); hideNotice(); report.classList.add('hidden'); actions.classList.add('hidden'); translateBox.classList.add('hidden');
+    try {
+      const data = await analyzeUrl(url);
+      latestReport = data;
+      renderReport(data);
+      actions.classList.remove('hidden'); report.classList.remove('hidden');
+      if (data.partial) showNotice('A limited report was generated. The website may block scanners, the API may not be active, or the page may not expose readable HTML. The tool still returns a report instead of failing.');
+      report.scrollIntoView({ behavior:'smooth', block:'start' });
+    } catch (err) {
+      const fallback = buildBrowserFallbackReport(url, err);
+      latestReport = fallback; renderReport(fallback); actions.classList.remove('hidden'); report.classList.remove('hidden');
+      showNotice('A URL-only report was generated because live analysis was unavailable. Deploy with the /functions folder on Cloudflare Pages for full reports.');
+      report.scrollIntoView({ behavior:'smooth', block:'start' });
+    } finally { setLoading(false); }
+  });
+
+  async function analyzeUrl(url){
+    const endpoints = ['./api/analyze','/api/analyze'];
+    let lastError;
+    for (const endpoint of endpoints) {
+      try {
+        const res = await fetch(endpoint, { method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify({url}) });
+        const data = await res.json().catch(() => null);
+        if (data && data.ok) return data;
+        if (data && data.error) throw new Error(data.error);
+        throw new Error('Analyzer API returned an unreadable response.');
+      } catch (e) { lastError = e; }
+    }
+    throw lastError || new Error('Analyzer API unavailable.');
+  }
+  function setLoading(state){ loading.classList.toggle('hidden', !state); form.querySelector('button[type="submit"]').disabled = state; }
+  function showError(message){ errorBox.innerHTML = '<strong>Analysis failed:</strong> ' + escapeHtml(message); errorBox.classList.remove('hidden'); }
+  function hideError(){ errorBox.classList.add('hidden'); errorBox.textContent = ''; }
+  function showNotice(message){ noticeBox.textContent = message; noticeBox.classList.remove('hidden'); }
+  function hideNotice(){ noticeBox.classList.add('hidden'); noticeBox.textContent = ''; }
+  function clearReport(){ latestReport = null; report.innerHTML = ''; report.classList.add('hidden'); actions.classList.add('hidden'); translateBox.classList.add('hidden'); $('translatedOutput').textContent=''; $('translationStatus').textContent=''; hideError(); hideNotice(); input.value=''; }
+
+  function renderReport(data){
+    const security = data.security || {}, counts = data.counts || {}, classification = data.classification || {}, decision = String(security.decision || 'CAUTION').toLowerCase();
+    report.innerHTML = `
+      <div class="score-board">
+        <article class="score-card"><div class="score-ring" style="--score:${Number(security.score || 0)}"><strong>${Number(security.score || 0)}</strong></div><h3>Trust Score</h3><p>Risk level: <strong>${escapeHtml(security.riskLevel || 'Unknown')}</strong></p><span class="decision ${decision}">${escapeHtml(security.decision || 'CAUTION')}</span>${data.partial ? '<span class="partial-badge">Limited report</span>' : ''}</article>
+        <article class="summary-card"><h3>${escapeHtml(classification.type || 'Website Report')}</h3><p>${escapeHtml(classification.purpose || 'A public website report was generated.')}</p><p class="muted"><strong>Final URL:</strong> ${escapeHtml(data.finalUrl || data.normalizedUrl || '')}</p><div class="summary-grid">${stat('Links', counts.totalLinks)}${stat('Internal', counts.internalLinks)}${stat('External', counts.externalOutgoingLinks)}${stat('Contacts', (counts.emails||0)+(counts.phones||0))}${stat('Forms', counts.forms)}${stat('Social', counts.socialLinks)}${stat('SEO Issues', (data.seo?.issues||[]).length)}${stat('Checks', (data.featureChecks||[]).length)}</div></article>
+      </div>
+      <div class="tabs" role="tablist">${['Overview','Contacts','Links','SEO','Security','Technology','Privacy','Checklist','JSON'].map((t,i)=>`<button class="tab-btn ${i===0?'active':''}" data-tab="${t.toLowerCase()}">${t}</button>`).join('')}</div>
+      <div id="tab-overview" class="tab-panel">${renderOverview(data)}</div>
+      <div id="tab-contacts" class="tab-panel hidden">${renderContacts(data.contacts || {})}</div>
+      <div id="tab-links" class="tab-panel hidden">${renderLinks(data.links || {}, counts)}</div>
+      <div id="tab-seo" class="tab-panel hidden">${renderSeo(data.seo || {}, data.content || {}, data.indexing || {})}</div>
+      <div id="tab-security" class="tab-panel hidden">${renderSecurity(data.security || {}, data.cookies || {}, data.permissions || {})}</div>
+      <div id="tab-technology" class="tab-panel hidden">${renderTechnology(data.technology || {}, data.content || {})}</div>
+      <div id="tab-privacy" class="tab-panel hidden">${renderPrivacy(data.privacy || {})}</div>
+      <div id="tab-checklist" class="tab-panel hidden">${renderChecklist(data.featureChecks || [])}</div>
+      <div id="tab-json" class="tab-panel hidden"><article class="report-card"><h3>Raw JSON Report</h3><pre class="raw-json">${escapeHtml(JSON.stringify(data,null,2))}</pre></article></div>`;
+    report.querySelectorAll('.tab-btn').forEach(btn => btn.addEventListener('click', () => switchTab(btn.dataset.tab)));
+  }
+  function switchTab(tab){ report.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab)); report.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden')); $('tab-' + tab)?.classList.remove('hidden'); }
+  function stat(label, value){ return `<div class="stat"><b>${escapeHtml(String(value ?? 0))}</b><span>${escapeHtml(label)}</span></div>`; }
+  function renderOverview(d){ return `<div class="grid-2"><article class="report-card"><h3>What this website appears to be</h3><p><strong>Type:</strong> ${escapeHtml(d.classification?.type || 'Unknown')}</p><p><strong>Confidence:</strong> ${escapeHtml(d.classification?.confidence || 'Unknown')}</p><p><strong>Purpose:</strong> ${escapeHtml(d.classification?.purpose || 'Not available')}</p><p><strong>HTTP status:</strong> ${escapeHtml(String(d.fetch?.status || 'Unavailable'))}</p><p><strong>Content type:</strong> ${escapeHtml(d.fetch?.contentType || 'Unavailable')}</p></article><article class="report-card"><h3>What users can do on this website</h3>${list(d.capabilities || [])}</article></div><div class="grid-3" style="margin-top:18px"><article class="report-card"><h3>Advantages</h3>${list(d.advantages || [])}</article><article class="report-card"><h3>Weaknesses</h3>${list(d.disadvantages || [])}</article><article class="report-card"><h3>Recommended fixes</h3>${list(d.recommendations || [])}</article></div>`; }
+  function renderContacts(c){ const forms = c.forms || {}; return `<div class="grid-2"><article class="report-card"><h3>Emails</h3>${list(c.emails || [])}</article><article class="report-card"><h3>Phone numbers</h3>${list(c.phones || [])}</article><article class="report-card"><h3>Name / organization hints</h3>${list(c.names || [])}</article><article class="report-card"><h3>Address hints</h3>${list(c.addresses || [])}</article></div><article class="report-card" style="margin-top:18px"><h3>Forms</h3><p>Forms: <strong>${forms.count || 0}</strong> · Password: <strong>${yesNo(forms.hasPassword)}</strong> · Upload: <strong>${yesNo(forms.hasFileUpload)}</strong> · Search: <strong>${yesNo(forms.hasSearch)}</strong></p>${table(['Method','Action','Signals'], (forms.forms||[]).map(f => [f.method, f.action, ['Password:'+yesNo(f.hasPassword),'Upload:'+yesNo(f.hasFileUpload),'Email:'+yesNo(f.hasEmailInput),'Textarea:'+yesNo(f.hasTextarea)].join(' · ')]))}</article>`; }
+  function renderLinks(links, counts){ return `<article class="report-card"><h3>Link Summary</h3><p class="muted">${escapeHtml(links.note || 'Visible page links only. This is not a real backlink database.')}</p><div class="summary-grid">${stat('Internal',counts.internalLinks)}${stat('External outgoing',counts.externalOutgoingLinks)}${stat('Social',counts.socialLinks)}${stat('Legal',counts.legalLinks)}${stat('Feeds',counts.feedLinks)}${stat('Resources',counts.resourceLinks)}</div></article><div class="grid-2" style="margin-top:18px"><article class="report-card"><h3>Internal links</h3>${linkList(links.internal)}</article><article class="report-card"><h3>External outgoing links</h3>${linkList(links.externalOutgoing)}</article><article class="report-card"><h3>Social links</h3>${linkList(links.social)}</article><article class="report-card"><h3>Important links</h3>${linkList(links.important)}</article><article class="report-card"><h3>Legal links</h3>${linkList(links.legal)}</article><article class="report-card"><h3>Feeds / resources</h3>${linkList([...(links.feeds||[]), ...(links.resources||[])])}</article></div>`; }
+  function renderSeo(seo, content, indexing){ return `<div class="grid-2"><article class="report-card"><h3>SEO Basics</h3><p><strong>Title:</strong> ${escapeHtml(seo.title || 'Missing')}</p><p><strong>Description:</strong> ${escapeHtml(seo.description || 'Missing')}</p><p><strong>Canonical:</strong> ${escapeHtml(seo.canonical || 'Missing')}</p><p><strong>Language:</strong> ${escapeHtml(seo.lang || 'Missing')}</p><p><strong>Viewport:</strong> ${escapeHtml(seo.viewport || 'Missing')}</p></article><article class="report-card"><h3>Headings & Images</h3><p>H1: <strong>${seo.h1Count || 0}</strong> · H2: <strong>${seo.h2Count || 0}</strong> · H3: <strong>${seo.h3Count || 0}</strong></p><p>Images: <strong>${seo.imageCount || 0}</strong> · Missing alt: <strong>${seo.imagesMissingAlt || 0}</strong></p><p>Favicon: <strong>${yesNo(seo.hasFavicon)}</strong></p><p>Open Graph image: <strong>${yesNo(seo.socialMeta?.openGraphImage)}</strong></p></article><article class="report-card"><h3>SEO Issues</h3>${list(seo.issues || [])}</article><article class="report-card"><h3>Content Signals</h3><p>Word count: <strong>${content.wordCount || 0}</strong></p><p>Readability hint: <strong>${escapeHtml(content.readabilityHint || 'Unavailable')}</strong></p><div class="keyword-list">${(content.topKeywords||[]).map(k => `<span class="keyword">${escapeHtml(k.keyword)} (${k.count})</span>`).join('') || '<p class="muted">No keywords found.</p>'}</div></article></div><article class="report-card" style="margin-top:18px"><h3>Indexing Files</h3><p>robots.txt: <strong>${indexing.robots?.ok ? 'Available' : 'Missing / unavailable'}</strong> · sitemap.xml: <strong>${indexing.sitemap?.ok ? 'Available' : 'Missing / unavailable'}</strong></p></article>`; }
+  function renderSecurity(sec, cookies, permissions){ return `<div class="grid-2"><article class="report-card"><h3>Security Headers</h3>${table(['Header','Status','Detail'], Object.entries(sec.headers||{}).map(([k,v]) => [k, badge(v.status), v.detail]))}</article><article class="report-card"><h3>Security Issues</h3>${list(sec.issues || [])}</article><article class="report-card"><h3>Cookie Signals</h3><p>Set-Cookie: <strong>${yesNo(cookies.setCookieHeader)}</strong></p><p>Secure: <strong>${yesNo(cookies.secureFlag)}</strong></p><p>HttpOnly: <strong>${yesNo(cookies.httpOnlyFlag)}</strong></p><p>SameSite: <strong>${yesNo(cookies.sameSiteFlag)}</strong></p></article><article class="report-card"><h3>Permission Hints</h3>${list(Object.entries(permissions).map(([k,v]) => `${k}: ${yesNo(v)}`))}</article></div>`; }
+  function renderTechnology(tech, content){ return `<div class="grid-2"><article class="report-card"><h3>Detected Technology</h3>${list(tech.detected || [])}</article><article class="report-card"><h3>CMS / Frameworks</h3>${list([...(tech.cms||[]), ...(tech.frameworks||[])])}</article><article class="report-card"><h3>Analytics / Payments / CDN</h3>${list([...(tech.analytics||[]), ...(tech.payments||[]), ...(tech.cdn||[])])}</article><article class="report-card"><h3>Structured Data</h3><p>JSON-LD blocks: <strong>${content.jsonLdCount || 0}</strong></p>${list(content.schemaTypes || [])}</article></div>`; }
+  function renderPrivacy(p){ return `<div class="grid-2"><article class="report-card"><h3>Privacy Signals</h3><p>Privacy policy: <strong>${yesNo(p.privacyPolicyLink)}</strong></p><p>Terms link: <strong>${yesNo(p.termsLink)}</strong></p><p>Cookie policy: <strong>${yesNo(p.cookiePolicyLink)}</strong></p><p>Referrer policy: <strong>${escapeHtml(p.referrerPolicy || 'Not visible')}</strong></p></article><article class="report-card"><h3>Trackers / Ads</h3><h4>Tracker signals</h4>${list(p.trackers || [])}<h4>Ad technology signals</h4>${list(p.adTech || [])}</article><article class="report-card"><h3>Privacy Issues</h3>${list(p.issues || [])}</article></div>`; }
+  function renderChecklist(checks){ return `<article class="report-card"><h3>Professional Checklist (${checks.length})</h3>${table(['Category','Check','Status','Detail'], checks.map(c => [c.category, c.name, badge(c.status), c.detail]))}</article>`; }
+  function list(items){ if (!items || !items.length) return '<p class="muted">No items found.</p>'; return `<ul class="list">${items.slice(0,80).map(i => `<li>${escapeHtml(String(i))}</li>`).join('')}</ul>`; }
+  function linkList(items){ if (!items || !items.length) return '<p class="muted">No links found.</p>'; return `<div class="link-list">${items.slice(0,120).map(l => `<a class="link-item" href="${escapeAttr(l.href)}" target="_blank" rel="noopener noreferrer"><strong>${escapeHtml(l.text || l.hostname || 'Open link')}</strong><small>${escapeHtml(l.href || '')}</small></a>`).join('')}</div>`; }
+  function table(headers, rows){ if (!rows || !rows.length) return '<p class="muted">No data available.</p>'; return `<div class="table-wrap"><table><thead><tr>${headers.map(h=>`<th>${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${typeof c === 'string' && c.startsWith('<span') ? c : escapeHtml(String(c ?? ''))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`; }
+  function badge(status){ const s = String(status || 'info').toLowerCase(); return `<span class="badge ${['pass','fail','warn','info'].includes(s)?s:'info'}">${escapeHtml(s)}</span>`; }
+  function yesNo(v){ return v === true ? 'Yes' : v === false ? 'No' : 'Unknown'; }
+
+  function buildTextSummary(d){ if(!d) return ''; const c=d.counts||{}, s=d.security||{}, cls=d.classification||{}; return [`SiteTrust Checker Pro Report`,`URL: ${d.finalUrl || d.normalizedUrl || d.inputUrl || ''}`,`Website type: ${cls.type || 'Unknown'} (${cls.confidence || 'Unknown'} confidence)`,`Purpose: ${cls.purpose || 'Not available'}`,`Trust score: ${s.score ?? 'N/A'} / 100`,`Decision: ${s.decision || 'CAUTION'}`,`Risk level: ${s.riskLevel || 'Unknown'}`,`Links: ${c.totalLinks || 0} total, ${c.internalLinks || 0} internal, ${c.externalOutgoingLinks || 0} external outgoing`,`Contacts: ${c.emails || 0} emails, ${c.phones || 0} phones, ${c.addresses || 0} address hints`,`Forms: ${c.forms || 0}`,`Advantages: ${(d.advantages||[]).join('; ') || 'None found'}`,`Weaknesses: ${(d.disadvantages||[]).join('; ') || 'None found'}`,`Recommendations: ${(d.recommendations||[]).join('; ') || 'None found'}`].join('\n'); }
+  async function translateReport(){ if(!latestReport){ showNotice('Generate a report first.'); return; } const lang = ($('customLang').value || $('languageSelect').value || 'bn').trim(); const text = buildTextSummary(latestReport); $('translationStatus').textContent = 'Translating...'; $('translatedOutput').textContent = ''; try { const endpoints = ['./api/translate','/api/translate']; let data=null, lastErr=null; for(const ep of endpoints){ try{ const res = await fetch(ep,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({text,target:lang})}); data = await res.json().catch(()=>null); if(res.ok && data?.ok) break; lastErr = new Error(data?.error || 'Translation failed'); }catch(e){ lastErr=e; } } if(!data?.ok) throw lastErr || new Error('Translation failed'); $('translatedOutput').textContent = data.translatedText; $('translationStatus').textContent = `Translated to ${lang}. Provider: ${data.provider || 'translation endpoint'}.`; } catch(e){ $('translationStatus').textContent = 'Automatic translation failed. Use the Google Translate button as fallback.'; openGoogleTranslate(false); } }
+  function openGoogleTranslate(openNow=true){ const text = encodeURIComponent(buildTextSummary(latestReport || buildBrowserFallbackReport(input.value))); const lang = encodeURIComponent(($('customLang').value || $('languageSelect').value || 'bn').trim()); const url = `https://translate.google.com/?sl=en&tl=${lang}&text=${text}&op=translate`; if(openNow) window.open(url, '_blank', 'noopener,noreferrer'); else $('translatedOutput').textContent = 'Google Translate fallback is available. Click "Open Google Translate".'; }
+  async function copyText(text){ try{ await navigator.clipboard.writeText(text || ''); showNotice('Copied.'); } catch { showNotice('Copy failed. Select and copy manually.'); } }
+  function downloadJson(){ if(!latestReport) return; const blob = new Blob([JSON.stringify(latestReport,null,2)], {type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='sitetrust-report.json'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(a.href); }
+  function buildBrowserFallbackReport(url, err){ let normalized = String(url || '').trim(); if(normalized && !/^https?:\/\//i.test(normalized)) normalized='https://'+normalized; let host=''; try{host=new URL(normalized).hostname}catch{} return {ok:true, partial:true, checkedAt:new Date().toISOString(), inputUrl:url, normalizedUrl:normalized, finalUrl:normalized, fetch:{ok:false,status:null,statusText:'Browser fallback',contentType:'',failureReason:err?.message||'Live API unavailable'}, classification:{type:host ? 'Website / Public URL' : 'Unknown URL', confidence:'Low', purpose:'The live analyzer was unavailable. This fallback report is based on the submitted URL only.'}, capabilities:['Open the public website in a browser','Manually verify links, contacts, legal pages, SEO tags and security headers'], counts:{totalLinks:0,internalLinks:0,externalOutgoingLinks:0,emails:0,phones:0,names:0,addresses:0,socialLinks:0,importantLinks:0,legalLinks:0,feedLinks:0,resourceLinks:0,forms:0,images:0,scripts:0,stylesheets:0}, links:{internal:[],externalOutgoing:[],social:[],important:[],legal:[],feeds:[],resources:[],note:'Live links were not available because the analyzer API did not respond.'}, contacts:{emails:[],phones:[],names:host?[host]:[],addresses:[],forms:{count:0,forms:[]}}, seo:{title:'',description:'',canonical:'',lang:'',viewport:'',h1:[],h2:[],h3:[],h1Count:0,h2Count:0,h3Count:0,imageCount:0,imagesMissingAlt:0,issues:['Live HTML was not available for SEO analysis.']}, security:{score:normalized.startsWith('https://')?55:35,decision:normalized.startsWith('https://')?'CAUTION':'NO',riskLevel:normalized.startsWith('https://')?'Medium':'High',issues:['The analyzer API did not respond. Live security headers could not be verified.'],headers:{},forms:{},cookies:{}}, privacy:{privacyPolicyLink:false,termsLink:false,cookiePolicyLink:false,trackers:[],adTech:[],issues:['Privacy signals could not be verified.']}, permissions:{geolocation:false,camera:false,microphone:false,notifications:false,clipboard:false,fullscreen:false}, cookies:{setCookieHeader:false,secureFlag:null,httpOnlyFlag:null,sameSiteFlag:null}, technology:{detected:[],cms:[],frameworks:[],analytics:[],payments:[],cdn:[],server:''}, content:{wordCount:0,textLength:0,sentenceCount:0,averageSentenceWords:0,topKeywords:[],schemaTypes:[],jsonLdCount:0,readabilityHint:'Unavailable'}, indexing:{robots:{ok:false},sitemap:{ok:false}}, advantages:[normalized.startsWith('https://')?'The submitted URL uses HTTPS.':'The URL format was accepted.'], disadvantages:['Live analysis was unavailable.'], recommendations:['Make sure Cloudflare Pages includes the /functions folder.','Use GitHub-connected Cloudflare Pages deployment for the live analyzer.'], featureChecks:[{category:'URL',name:'Valid URL format',status:host?'pass':'warn',detail:normalized},{category:'Fetch',name:'Live analyzer API',status:'warn',detail:err?.message||'Unavailable'}] }; }
+  function escapeHtml(s){ return String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+  function escapeAttr(s){ return escapeHtml(s).replace(/`/g,'&#96;'); }
+})();
+</script>
+</body>
+</html>
